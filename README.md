@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# BD-CHRONICLES
+
+A modern Bengali news portal built with **Next.js**
+
+## Features
+
+* Browse the latest news
+* View news by category
+* Most-read news section
+* Detailed article pages
+
+
+## Tech Stack
+
+* **Next.js** 
+* **Tailwind CSS** 
+* **DaisyUI** 
+
+## API
+
+Bangla Bulletin uses the [News API V2](https://news-api-v2.vercel.app/api) to fetch news, categories, and articles.
+
+### Endpoints
+
+| Endpoint | Description |
+|---|---|
+| `/api/categories` | Categories from the site navigation |
+| `/api/news` | Latest headlines, flattened and deduplicated. Supports `limit`, `offset`, `category`, and `q` |
+| `/api/news/sections` | Homepage news grouped into sections |
+| `/api/news/most-read` | Ranked most-read articles |
+| `/api/category/{categoryName}` | News from a specific category |
+| `/api/article/{id}` | Full article with body, byline, topics, tags, and word count |
+
+### API Base URL
+
+https://news-api-v2.vercel.app/api/
+
+
 
 ## Getting Started
 
-First, run the development server:
+Clone the repository:
+
+```bash
+git clone https://github.com/rakibur-rafi/bd-chronicles.git
+```
+
+Go to the project directory:
+
+```bash
+cd bd-chronicles
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Links
 
-## Learn More
+Live Website: [Vercel](https://bangla-bulletin.vercel.app/)
 
-To learn more about Next.js, take a look at the following resources:
+Github: [Github](https://github.com/rakibur-rafi/bd-chronicles)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Screenshots
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+![Homepage](./ss/bd-1.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+![Category](./ss/bd-2.png)
+
+
+![Article](./ss/bd-3.png)
