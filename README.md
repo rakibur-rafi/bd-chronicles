@@ -71,7 +71,7 @@ http://localhost:3000
 
 ## Links
 
-Live Website: [Vercel](https://bangla-bulletin.vercel.app/)
+Live Website: [Netlify](https://bd-chronicles.netlify.app/)
 
 Github: [Github](https://github.com/rakibur-rafi/bd-chronicles)
 
